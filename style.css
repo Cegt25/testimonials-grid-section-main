@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --purple-500: hsl(263, 55%, 52%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-50: hsl(260, 100%, 95%);
+  --grey-500: hsl(217, 19%, 35%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-400: hsl(224, 10%, 45%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: var(--grey-100);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.testimonial {
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px -10px var(--grey-400);
+}
+
+.testimonial-1 {
+    background-color: var(--purple-500);
+    color: var(--white);
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 20%;
+    background-size: auto;
+}
+
+.testimonial-2 {
+    background-color: var(--grey-500);
+    color: var(--white);
+}
+
+.testimonial-3 {
+    background-color: var(--white);
+    color: var(--grey-400);
+}
+
+.testimonial-4 {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.testimonial-5 {
+    background-color: var(--white);
+    color: var(--grey-400);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.avatar-purple {
+    border: 2px solid var(--purple-300);
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 4px 0;
+}
+
+.status {
+  font-size: 11px;
+  line-height: 1;
+  margin: 0;
+}
+
+.lead {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.comment {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.attribution {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+    margin-top: 16px;
+    color: var(--grey-400);
+}
+
+@media (min-width: 992px) {
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    .testimonial-1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .testimonial-2 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .testimonial-5 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+
+    .testimonial-3 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .testimonial-4 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .attribution {
+        grid-column: 1 / 5;
+        grid-row: 3 / 4;
+    }
+
+}
