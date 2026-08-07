@@ -74,20 +74,12 @@ I used Flexbox for small screens and CSS Grid for large screens; I learned a bit
 }
 ```
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - [color code](https://htmlcolorcodes.com/) - It really helped me establish the colors.
 
 
 ### AI Collaboration
-
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
 
 - What tools did you use (Gemini)
 - How did you use them (debugging, brainstorming solutions)
